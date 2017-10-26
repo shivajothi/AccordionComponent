@@ -2,7 +2,7 @@
 Developed using VanillaJs/HTML5/CSS
 
 Please download or clone the repository.
- Description
+
 # Requirement
 + This module will appear on the Homepage
 + Using whatever technique, html, javascript, flash, plugins etc… please show/fetch the 'Top Destinations' module
