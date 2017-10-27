@@ -72,8 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 let content = parentElement.querySelector('.panel_content');
                 _toggleClass(icon);
                 _toggleClass(content);
-
-            }
+			}
 
         };
 
