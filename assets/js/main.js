@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         var _toggle = function(event) {
-            console.log(event.target);
             let className = "toggle";
             let parent = "panel_element";
             if (_hasClass(event.target, className)) {
