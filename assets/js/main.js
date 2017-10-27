@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 li.className = "panel_list";
                 var div = document.createElement('div');
                 div.className = "panel_element";
-                str += '<div class="panel_header" ><div class="wrap toggle"><div class="panel_title ' + _toggleClass + '  text_blue text_large toggle">' + _list[index].city + ',' + _list[index].name + '</div>';
+                str += '<div class="panel_header" ><div class="wrap toggle"><div class="panel_title ' + _toggleClass + ' toggle"><a href="#" class="text_blue text_large toggle">' + _list[index].city + ',' + _list[index].name + '</a></div>';
                 str += '<div class="panel_info text_gray text_small toggle">Over ' + _list[index].count + ' Hotels</div></div></div>';
                 if (_list[index].hotels) {
                     let hotels = _list[index].hotels;
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         var _toggle = function(event) {
-            let className = "toggle";
+			let className = "toggle";
             let parent = "panel_element";
             if (_hasClass(event.target, className)) {
                 let parentElement = closestByClass(event.target, parent);
@@ -72,7 +72,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 let content = parentElement.querySelector('.panel_content');
                 _toggleClass(icon);
                 _toggleClass(content);
-			}
+
+            }
 
         };
 
